@@ -29,22 +29,19 @@ var gmapkey = "AIzaSyAwe6XMoayWw_yOH48YW4zBNf2XGnyZYeo";
 // FUNCTIONS
 
 // initialize map and services
-function initMap() {	
+function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		mapTypeControl: false,
 		streetViewControl: false,
 		zoom: 6,
 		center: {lat: 41.85, lng: -87.65}
 	});
-	infowindow = new google.maps.InfoWindow();
+/*	infowindow = new google.maps.InfoWindow();
 	geocoder = new google.maps.Geocoder();
 	directionsService = new google.maps.DirectionsService;
 	directionsDisplay = new google.maps.DirectionsRenderer;
 	directionsDisplay.setMap(map);
-	placesService = new google.maps.places.PlacesService(map);
-	
-
-
+	placesService = new google.maps.places.PlacesService(map);*/
 }
 function check_dep(){
 	geocoder.geocode({'address': dep_string}, function(results, status) {
