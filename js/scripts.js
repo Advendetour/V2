@@ -24,4 +24,11 @@ function initialize() {
 
 };
 /* end google maps -----------------------------------------------------*/
+
+
+$("#slider").slider({ id: "slider", tooltip: "hide", max: 1000, range: true, value: [100, 500], });
+$("#slider").on("slide", function(slideEvt) {
+  $("#slider_val").text(slideEvt.value[0]+"-"+slideEvt.value[1]);
+});
+
 });

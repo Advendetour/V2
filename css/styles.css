@@ -1,53 +1,24 @@
-/*
-A custom Bootstrap 3.1 theme from http://bootply.com\
-
-This CSS code should follow the 'bootstrap.css'
-in your HTML file.
-
-license: MIT
-author: bootply.com
-*/
-
-
 html,body{
   	height:100%;
 }
 
-body{
-  	padding-top:50px; /*padding for navbar*/
-}
-
-.navbar-brand img{
-    height:30px;
-    position: relative;
-    top:-5px;
-}
-.navbar li>a:hover, .navbar li>a:focus{
-    background-color: #e7e7e7 !important;
-}
-/*these were needed to make searchbar max width*/
-.navbar-form{padding:0 !important;}
-.navbar-form .form-group{display:inline;}
-.navbar-form .input-group{display:table;}
-.navbar-form .input-group-btn{width:1% !important;}
-/*.navbar-custom .icon-bar {
-	background-color:#fff;
-}
-
-.navbar-custom {
-	background-color: #168ccc;
-    color:#fff;
-}
-.navbar-custom a{
-    color:#fefefe;
-}
-
-.navbar-custom .form-control:focus {
-	border-color: #49bfff;
-	outline: 0;
-	-webkit-box-shadow: inset 0 0 0;
-	box-shadow: inset 0 0 0;
-}*/
+/* navbar */
+    body{
+        padding-top:50px; /*padding for navbar*/
+    }
+    .navbar-brand img{
+        height:30px;
+        position: relative;
+        top:-5px;
+    }
+    .navbar li>a:hover, .navbar li>a:focus{
+        background-color: #e7e7e7 !important;
+    }
+    /*these were needed to make searchbar max width*/
+    .navbar-form{padding:0 !important;}
+    .navbar-form .form-group{display:inline;}
+    .navbar-form .input-group{display:table;}
+    .navbar-form .input-group-btn{width:1% !important;}
 
 #main, #main>.row {
 	height:100%;
@@ -63,10 +34,16 @@ body{
 
 #map-canvas {
 	width:50%;
-    height:calc(100% - 0);
+    height:100%; /*calc(100% - 0);*/
     position:absolute;
-    right:16px;
-    top:50px;
+    right:16px; /*scroll bar*/
+    top:50px; /*navbar*/
     bottom:0;
     overflow:hidden;
 }
+
+/* slider */
+    #slider .slider-track{background: #e7e7e7;   }
+    #slider .slider-selection {background: #006fff;}
+    .slider.slider-horizontal{width:100%;}
+    #slider_output{float:right;font-weight: bold;}
